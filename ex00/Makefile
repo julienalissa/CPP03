@@ -1,4 +1,4 @@
-NAME = Fixed
+NAME = ClapTrap
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 CXX = c++
