@@ -2,7 +2,7 @@
 
 // 4 Orthodox Canonical Form,
 
-FragTrap::FragTrap() : ScavTrap()
+FragTrap::FragTrap() : ClapTrap()
 {
 	this->_name = "";
 	this->_hitPoints = 100;
@@ -11,7 +11,7 @@ FragTrap::FragTrap() : ScavTrap()
 	std::cout << "FragTrap : Default constructor called" << std::endl;
 }
 
-FragTrap::FragTrap(const FragTrap &other) : ScavTrap(other)
+FragTrap::FragTrap(const FragTrap &other) : ClapTrap(other)
 {
 	std::cout << "FragTrap : Copy constructor called" << std::endl;
 	*this = other;
@@ -36,7 +36,7 @@ FragTrap::~FragTrap(void)
 }
 
 //other constructor
-FragTrap::FragTrap(const std::string &name) : ScavTrap(name)
+FragTrap::FragTrap(const std::string &name) : ClapTrap(name)
 {
 	this->_hitPoints = 100;
 	this->_energyPoints = 100;

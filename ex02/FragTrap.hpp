@@ -1,12 +1,12 @@
 #ifndef FRAGTRAP_HPP
 # define FRAGTRAP_HPP
 
-# include "ScavTrap.hpp"
+# include "ClapTrap.hpp"
 
 # include <string>
 
 
-class FragTrap : public ScavTrap
+class FragTrap : public ClapTrap
 {
 	public :
 	// 4 Orthodox Canonical Form,
