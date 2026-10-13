@@ -1,8 +1,8 @@
 #ifndef CLAPTRAP_HPP
 # define CLAPTRAP_HPP
 
-#include <iostream>
-#include <string>
+# include <iostream>
+# include <string>
 
 class ClapTrap
 {
@@ -29,7 +29,7 @@ class ClapTrap
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
 
-
+	void	guardGate();
 };
 
 

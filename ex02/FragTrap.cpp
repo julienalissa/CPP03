@@ -60,3 +60,10 @@ void FragTrap::attack(const std::string& target)
 	}
 }
 
+	void	FragTrap::highFivesGuys(void)
+	{
+		if (this->_hitPoints <= 0)
+			std::cout << "FraTrap " << this->_name << " cant make a high five, no more hp" << std::endl;
+		else
+			std::cout << "FragTrap " << this->_name << " make a high five !" << std::endl;
+	}

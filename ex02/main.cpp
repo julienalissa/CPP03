@@ -1,16 +1,35 @@
 #include "ClapTrap.hpp"
 #include "ScavTrap.hpp"
-
+#include "FragTrap.hpp"
 int	main(void)
 {
-	ScavTrap a("Graves");
-	std::cout << a.getEnergyPoints() << std::endl;
+	FragTrap a("Graves");
+
+	std::cout << "Graves name is " << a.getName() << "." <<std::endl;
+	std::cout << "Graves hp is " << a.getHitPoints() << "." <<std::endl;
+	std::cout << "Graves energy Point is " << a.getEnergyPoints() << "." << std::endl;
+	std::cout << "Graves attack dmg is " << a.getAttackDamage() << "." << std::endl;
+
+
+
+	std::cout << std::endl << std::endl << std::endl;
+
+
+
+	std::cout << "Graves energy point : " << a.getEnergyPoints() << std::endl;
 	a.attack("arme");
-	std::cout << "energy p " << a.getEnergyPoints() << std::endl;
+	std::cout << "Graves energy points : " << a.getEnergyPoints() << std::endl;
+	std::cout << "Graves hp is : " << a.getHitPoints() << std::endl;
 	a.takeDamage(4);
-	std::cout << "hit p" << a.getHitPoints() << std::endl;
+	std::cout << "Graves hp is : " << a.getHitPoints() << std::endl;
 	a.getEnergyPoints();
 	a.beRepaired(2);
-	a.guardGate();
+	std::cout << "Graves energy points : " << a.getEnergyPoints() << std::endl;
+	std::cout << "Graves hp is : " << a.getHitPoints() << std::endl;
+
+	std::cout << std::endl << std::endl << std::endl;
+
+	a.highFivesGuys();
+
 
 }

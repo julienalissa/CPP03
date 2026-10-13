@@ -110,3 +110,10 @@ void ClapTrap::takeDamage(unsigned int amount)
 	}
 
 }
+	void	ClapTrap::guardGate()
+	{
+		if (this->_energyPoints >= 1)
+			std::cout << "I am on Gate keeper mode." << std::endl;
+		else
+			std::cout << "I cant go on Gate keeper mode because I am dead" << std::endl;
+	}
