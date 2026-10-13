@@ -11,6 +11,6 @@ int	main(void)
 	std::cout << "hit p" << a.getHitPoints() << std::endl;
 	a.getEnergyPoints();
 	a.beRepaired(2);
-
+	a.guardGate();
 
 }

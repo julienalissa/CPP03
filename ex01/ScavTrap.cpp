@@ -47,11 +47,11 @@ void ScavTrap::attack(const std::string& target)
 {
 	if (this->_energyPoints <= 0)
 	{
-		std::cout << this->_name <<" have no more energy point, I cant atack!" << std::endl;
+		std::cout << "ScavTrap : " << this->_name <<" have no more energy point, I cant atack!" << std::endl;
 	}
 	else if (this->_hitPoints <= 0)
 	{
-		std::cout << this->_name << " have no more hp, I cant attack!" << std::endl;
+		std::cout << "ScavTrap : " << this->_name << " have no more hp, I cant attack!" << std::endl;
 	}
 	else
 	{
