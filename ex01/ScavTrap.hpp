@@ -5,15 +5,10 @@
 
 class ScavTrap : public ClapTrap
 {
-	private :
-		std::string	_name;
-		int			_hitPoints;
-		int			_energyPoints;
-		int			_attackDamage;
 	public :
 	// 4 Orthodox Canonical Form,
 	ScavTrap();
-	ScavTrap(const ClapTrap &other);
+	ScavTrap(const ScavTrap &other);
 	ScavTrap &operator=(const ScavTrap &other);
 	~ScavTrap(void);
 

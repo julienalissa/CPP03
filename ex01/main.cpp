@@ -1,9 +1,9 @@
 #include "ClapTrap.hpp"
-
+#include "ScavTrap.hpp"
 
 int	main(void)
 {
-	ClapTrap a("Graves");
+	ScavTrap a("Graves");
 	std::cout << a.getEnergyPoints() << std::endl;
 	a.attack("arme");
 	std::cout << "energy p " << a.getEnergyPoints() << std::endl;
@@ -11,6 +11,6 @@ int	main(void)
 	std::cout << "hit p" << a.getHitPoints() << std::endl;
 	a.getEnergyPoints();
 	a.beRepaired(2);
-	
+
 
 }

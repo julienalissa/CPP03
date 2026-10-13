@@ -2,12 +2,16 @@
 
 // 4 Orthodox Canonical Form,
 
-ScavTrap::ScavTrap() : _name(""), _hitPoints(100), _energyPoints(50), _attackDamage(20)
+ScavTrap::ScavTrap() : ClapTrap()
 {
+	this->_name = "";
+	this->_hitPoints = 100;
+	this->_energyPoints = 50;
+	this->_attackDamage = 20;
 	std::cout << "ScavTrap : Default constructor called" << std::endl;
 }
 
-ScavTrap::ScavTrap(const ScavTrap &other)
+ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap(other)
 {
 	std::cout << "ScavTrap : Copy constructor called" << std::endl;
 	*this = other;
@@ -32,8 +36,11 @@ ScavTrap::~ScavTrap(void)
 }
 
 //other constructor
-ScavTrap::ScavTrap(const std::string &name) : _name(name), _hitPoints(10), _energyPoints(10), _attackDamage(0)
+ScavTrap::ScavTrap(const std::string &name) : ClapTrap(name)
 {
+	this->_hitPoints = 100;
+	this->_energyPoints = 50;
+	this->_attackDamage = 20;
 	std::cout << "ScavTrap : String constructor called" << std::endl;
 }
 void ScavTrap::attack(const std::string& target)
